@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C92E2A4E2175608400368A9E /* detalles.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92E2A4D2175608400368A9E /* detalles.swift */; };
 		C98A54B62174E72B00A5A8A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98A54B52174E72B00A5A8A3 /* AppDelegate.swift */; };
 		C98A54B82174E72B00A5A8A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98A54B72174E72B00A5A8A3 /* ViewController.swift */; };
 		C98A54BB2174E72B00A5A8A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C98A54B92174E72B00A5A8A3 /* Main.storyboard */; };
@@ -14,6 +15,8 @@
 		C98A54C02174E72D00A5A8A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C98A54BE2174E72D00A5A8A3 /* LaunchScreen.storyboard */; };
 		C98A54CB2174E72D00A5A8A3 /* RecetarioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98A54CA2174E72D00A5A8A3 /* RecetarioTests.swift */; };
 		C98A54D62174E72D00A5A8A3 /* RecetarioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98A54D52174E72D00A5A8A3 /* RecetarioUITests.swift */; };
+		C98A54E52174E77A00A5A8A3 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C98A54E42174E77A00A5A8A3 /* MapKit.framework */; };
+		C9D736FA2175213D00846D97 /* tablax.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D736F92175213D00846D97 /* tablax.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C92E2A4D2175608400368A9E /* detalles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detalles.swift; sourceTree = "<group>"; };
 		C98A54B22174E72B00A5A8A3 /* Recetario.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Recetario.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C98A54B52174E72B00A5A8A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C98A54B72174E72B00A5A8A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +51,8 @@
 		C98A54D12174E72D00A5A8A3 /* RecetarioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecetarioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C98A54D52174E72D00A5A8A3 /* RecetarioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecetarioUITests.swift; sourceTree = "<group>"; };
 		C98A54D72174E72D00A5A8A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C98A54E42174E77A00A5A8A3 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		C9D736F92175213D00846D97 /* tablax.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tablax.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C98A54E52174E77A00A5A8A3 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +88,7 @@
 				C98A54C92174E72D00A5A8A3 /* RecetarioTests */,
 				C98A54D42174E72D00A5A8A3 /* RecetarioUITests */,
 				C98A54B32174E72B00A5A8A3 /* Products */,
+				C98A54E32174E77A00A5A8A3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +107,8 @@
 			children = (
 				C98A54B52174E72B00A5A8A3 /* AppDelegate.swift */,
 				C98A54B72174E72B00A5A8A3 /* ViewController.swift */,
+				C9D736F92175213D00846D97 /* tablax.swift */,
+				C92E2A4D2175608400368A9E /* detalles.swift */,
 				C98A54B92174E72B00A5A8A3 /* Main.storyboard */,
 				C98A54BC2174E72D00A5A8A3 /* Assets.xcassets */,
 				C98A54BE2174E72D00A5A8A3 /* LaunchScreen.storyboard */,
@@ -123,6 +133,14 @@
 				C98A54D72174E72D00A5A8A3 /* Info.plist */,
 			);
 			path = RecetarioUITests;
+			sourceTree = "<group>";
+		};
+		C98A54E32174E77A00A5A8A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C98A54E42174E77A00A5A8A3 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +211,11 @@
 				TargetAttributes = {
 					C98A54B12174E72B00A5A8A3 = {
 						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					C98A54C52174E72D00A5A8A3 = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -256,8 +279,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9D736FA2175213D00846D97 /* tablax.swift in Sources */,
 				C98A54B82174E72B00A5A8A3 /* ViewController.swift in Sources */,
 				C98A54B62174E72B00A5A8A3 /* AppDelegate.swift in Sources */,
+				C92E2A4E2175608400368A9E /* detalles.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
