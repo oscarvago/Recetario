@@ -24,7 +24,11 @@ class tablax: UITableViewController {
     var detail = ["De harina integral, salsa italiana casera, en horno de parrilla", "De enpanadas tai, rellenas de camaron...", "De pan integral, con adereso de mostaza dulce....", "De panela con vegetales y arugula...", "De pan de centeno, toffu y hierbas finas..."]
     var calorias = ["200kcal", "150kcal", "150kcal", "50kcal", "80kcal"]
     var tumbs = [UIImage(named:"dos"), UIImage(named:"tres"), UIImage(named:"uno"), UIImage(named:"cinco"), UIImage(named:"cuatro")]
-    var preparacion = ["lorem ipsum domit lamet","lorem ipsum domit lamet","lorem ipsum domit lamet","lorem ipsum domit lamet","lorem ipsum domit lamet"]
+    var preparacion = ["lorem ipsum domit lamet 1","lorem ipsum domit lamet 2","lorem ipsum domit lamet 3","lorem ipsum domit lamet 4 ","lorem ipsum domit lamet5"]
+    var ingredients = ["Harina de tringo integral, jitomates, ajo, queso mozzarela, albacar, embutidos", "Harina de trigo, harina de arroz, caldo de camaron, camaron, germinado de soya", "rebanada gruesa de pan integral casero, mostaza, miel, albacar, huevo", "mezcla de lechugas, queso panela, arugula, vinagreta de arandano", "pan integral, toffu solido, mezcla de hierbas"]
+    var origin = ["Napoli", "Bankgokg","London", "Roma", "San Francisco" ]
+    var lat = [40.83,13.75,51.50,41.89,37.76]
+    var long = [14.25,100.81,-0.12,12.48,-122.43]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -64,6 +68,7 @@ class tablax: UITableViewController {
         cell.titler?.text = titulo[indexPath.row]
         cell.tumb?.image = tumbs[indexPath.row]
         
+        
 
         return cell
     }
@@ -75,6 +80,11 @@ class tablax: UITableViewController {
        let DcV = Storyboard.instantiateViewController(withIdentifier: "detalles") as! detalles
     
         DcV.getPreparacion = preparacion[indexPath.row]
+        DcV.getTitulo = titulo[indexPath.row]
+        DcV.getIngredientes = ingredients[indexPath.row]
+       //DcV.getOrigin = origin[indexPath.row]
+        //DcV.getLat = lat[indexPath.row]
+        //DcV.getLong = long[indexPath.row]
         DcV.getImage = tumbs[indexPath.row] as! UIImage
         self.navigationController?.pushViewController(DcV, animated: true)
     }
