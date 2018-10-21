@@ -35,17 +35,34 @@ class detalles: UIViewController {
     
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
+        if segue.destination is origen
+        {
+            let DccV = segue.destination as? origen
+            DccV?.finalLat = getLat
+            DccV?.finalLong = getLong
+            DccV?.finalOrigin = getOrigin
+        }
+    }
+    
     @IBAction func goToMap(_ sender: Any) {
         
-        let Storyboard = UIStoryboard(name: "detalles", bundle: nil)
-        let DcV = Storyboard.instantiateViewController(withIdentifier: "origen") as! origen
+        /*let DccV = origen(nibName: "origen", bundle: nil)
+        //let DccV = Storyboarding.instantiateViewController(withIdentifier: "origen") as! origen
         
-        DcV.finalLat = getLat
-        DcV.finalLong = getLong
+        DccV.finalLat = getLat
+        DccV.finalLong = getLong
         
-        self.navigationController?.pushViewController(DcV, animated: true)
+        navigationController?.pushViewController(DccV, animated: true)*/
+        
+        performSegue(withIdentifier: "goToMapi", sender: sender)
+        
         
     }
+    
+        
+    
     
     
     

@@ -82,9 +82,9 @@ class tablax: UITableViewController {
         DcV.getPreparacion = preparacion[indexPath.row]
         DcV.getTitulo = titulo[indexPath.row]
         DcV.getIngredientes = ingredients[indexPath.row]
-       //DcV.getOrigin = origin[indexPath.row]
-        //DcV.getLat = lat[indexPath.row]
-        //DcV.getLong = long[indexPath.row]
+        DcV.getOrigin = origin[indexPath.row]
+        DcV.getLat = lat[indexPath.row]
+        DcV.getLong = long[indexPath.row]
         DcV.getImage = tumbs[indexPath.row] as! UIImage
         self.navigationController?.pushViewController(DcV, animated: true)
     }

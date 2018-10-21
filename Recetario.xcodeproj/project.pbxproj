@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		C916FDA821790811000501F2 /* detalles.swift in Sources */ = {isa = PBXBuildFile; fileRef = C916FDA721790810000501F2 /* detalles.swift */; };
 		C97920EF2178F44C006BA361 /* origen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97920EE2178F44C006BA361 /* origen.swift */; };
+		C9879681217C0D1700D5B34A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C98A54B92174E72B00A5A8A3 /* Main.storyboard */; };
 		C98A54B62174E72B00A5A8A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98A54B52174E72B00A5A8A3 /* AppDelegate.swift */; };
 		C98A54B82174E72B00A5A8A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98A54B72174E72B00A5A8A3 /* ViewController.swift */; };
-		C98A54BB2174E72B00A5A8A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C98A54B92174E72B00A5A8A3 /* Main.storyboard */; };
 		C98A54BD2174E72D00A5A8A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C98A54BC2174E72D00A5A8A3 /* Assets.xcassets */; };
 		C98A54C02174E72D00A5A8A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C98A54BE2174E72D00A5A8A3 /* LaunchScreen.storyboard */; };
 		C98A54CB2174E72D00A5A8A3 /* RecetarioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98A54CA2174E72D00A5A8A3 /* RecetarioTests.swift */; };
@@ -255,9 +255,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9879681217C0D1700D5B34A /* Main.storyboard in Resources */,
 				C98A54C02174E72D00A5A8A3 /* LaunchScreen.storyboard in Resources */,
 				C98A54BD2174E72D00A5A8A3 /* Assets.xcassets in Resources */,
-				C98A54BB2174E72B00A5A8A3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

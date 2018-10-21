@@ -13,10 +13,12 @@ class origen: UIViewController {
 
     var finalLat = Double()
     var finalLong = Double()
+    var finalOrigin = String()
     
     @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak var lblOrigin: UILabel!
     
-    let regionRadius: CLLocationDistance = 1000
+    let regionRadius: CLLocationDistance = 100000
     func centerMapOnLocation(location: CLLocation) {
         let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,regionRadius, regionRadius)
         mapView.setRegion(coordinateRegion, animated: true)
@@ -29,6 +31,8 @@ class origen: UIViewController {
 
         let inilocacion = CLLocation(latitude: finalLat , longitude: finalLong)
         centerMapOnLocation(location: inilocacion)
+        
+        lblOrigin.text = finalOrigin
         
     }
 
