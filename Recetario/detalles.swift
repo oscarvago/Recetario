@@ -8,6 +8,8 @@
 
 import UIKit
 
+
+
 class detalles: UIViewController {
 
     
@@ -44,25 +46,27 @@ class detalles: UIViewController {
             DccV?.finalLong = getLong
             DccV?.finalOrigin = getOrigin
         }
+        if segue.destination is Agendar
+        {
+            let DccVa = segue.destination as? Agendar
+            DccVa?.agTitle = getTitulo
+            DccVa?.agImage = getImage
+            
+        }
     }
     
     @IBAction func goToMap(_ sender: Any) {
         
-        /*let DccV = origen(nibName: "origen", bundle: nil)
-        //let DccV = Storyboarding.instantiateViewController(withIdentifier: "origen") as! origen
-        
-        DccV.finalLat = getLat
-        DccV.finalLong = getLong
-        
-        navigationController?.pushViewController(DccV, animated: true)*/
-        
         performSegue(withIdentifier: "goToMapi", sender: sender)
-        
         
     }
     
         
+    @IBAction func goToAgendar(_ sender: Any) {
     
+        performSegue(withIdentifier: "evento", sender: sender)
+    
+    }
     
     
     

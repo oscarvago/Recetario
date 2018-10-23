@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		C916FDA821790811000501F2 /* detalles.swift in Sources */ = {isa = PBXBuildFile; fileRef = C916FDA721790810000501F2 /* detalles.swift */; };
+		C93396E6217ED03E00E51E20 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C93396E5217ED03D00E51E20 /* EventKit.framework */; };
+		C93396E8217ED04A00E51E20 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C93396E7217ED04A00E51E20 /* EventKitUI.framework */; };
+		C93396EA217ED71D00E51E20 /* Agendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93396E9217ED71D00E51E20 /* Agendar.swift */; };
 		C97920EF2178F44C006BA361 /* origen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97920EE2178F44C006BA361 /* origen.swift */; };
 		C9879681217C0D1700D5B34A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C98A54B92174E72B00A5A8A3 /* Main.storyboard */; };
 		C98A54B62174E72B00A5A8A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98A54B52174E72B00A5A8A3 /* AppDelegate.swift */; };
@@ -39,6 +42,9 @@
 
 /* Begin PBXFileReference section */
 		C916FDA721790810000501F2 /* detalles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = detalles.swift; sourceTree = "<group>"; };
+		C93396E5217ED03D00E51E20 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		C93396E7217ED04A00E51E20 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
+		C93396E9217ED71D00E51E20 /* Agendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Agendar.swift; sourceTree = "<group>"; };
 		C97920EE2178F44C006BA361 /* origen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = origen.swift; sourceTree = "<group>"; };
 		C98A54B22174E72B00A5A8A3 /* Recetario.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Recetario.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C98A54B52174E72B00A5A8A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +68,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C93396E8217ED04A00E51E20 /* EventKitUI.framework in Frameworks */,
+				C93396E6217ED03E00E51E20 /* EventKit.framework in Frameworks */,
 				C98A54E52174E77A00A5A8A3 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -108,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				C916FDA721790810000501F2 /* detalles.swift */,
+				C93396E9217ED71D00E51E20 /* Agendar.swift */,
 				C98A54B52174E72B00A5A8A3 /* AppDelegate.swift */,
 				C98A54B72174E72B00A5A8A3 /* ViewController.swift */,
 				C9D736F92175213D00846D97 /* tablax.swift */,
@@ -141,6 +150,8 @@
 		C98A54E32174E77A00A5A8A3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C93396E7217ED04A00E51E20 /* EventKitUI.framework */,
+				C93396E5217ED03D00E51E20 /* EventKit.framework */,
 				C98A54E42174E77A00A5A8A3 /* MapKit.framework */,
 			);
 			name = Frameworks;
@@ -284,6 +295,7 @@
 			files = (
 				C9D736FA2175213D00846D97 /* tablax.swift in Sources */,
 				C916FDA821790811000501F2 /* detalles.swift in Sources */,
+				C93396EA217ED71D00E51E20 /* Agendar.swift in Sources */,
 				C97920EF2178F44C006BA361 /* origen.swift in Sources */,
 				C98A54B82174E72B00A5A8A3 /* ViewController.swift in Sources */,
 				C98A54B62174E72B00A5A8A3 /* AppDelegate.swift in Sources */,
