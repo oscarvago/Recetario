@@ -9,8 +9,11 @@
 import UIKit
 import MapKit
 
+
 class origen: UIViewController {
 
+    
+    
     var finalLat = Double()
     var finalLong = Double()
     var finalOrigin = String()
@@ -18,13 +21,16 @@ class origen: UIViewController {
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var lblOrigin: UILabel!
     
+    
     let regionRadius: CLLocationDistance = 100000
     func centerMapOnLocation(location: CLLocation) {
         let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,regionRadius, regionRadius)
         mapView.setRegion(coordinateRegion, animated: true)
     }
     
+
     
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,14 +40,15 @@ class origen: UIViewController {
         
         lblOrigin.text = finalOrigin
         
+        
+      
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
- 
 
 }
+
